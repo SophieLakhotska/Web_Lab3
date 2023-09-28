@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('Background2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: #333;
+  color: #f2522e;
+  padding: 10px 0;
+  border-bottom: 2px solid #f2522e;
+}
+
+.logo {
+  float: left;
+}
+
+.logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f86f3d;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+}
+
+nav a:hover {
+  color: #ef350e;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+
+.content {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  line-height: 2;
+}
+
+.block {
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 20px;
+}
+
+p{
+  color: white;
+  font-size: 20px;
+}
+
+.first {
+  background-color: #333;
+  color: #f26938;
+  text-align: center;
+}
+
+.first p{
+  text-align: left;
+}
+
+.second {
+  background-color: #333;
+  color: #f26938;
+  text-align: center;
+}
+
+.photo-container{
+  display: flex; /* Встановлюємо flex-контейнер */
+  align-items: center; /* Вирівнюємо елементи по вертикалі */
+  justify-content: space-between; /* Розташовуємо елементи по горизонталі з рівним відступом */
+  padding: 20px; /* Додаємо відступи для контейнера */
+}
+
+.second img{
+  flex: 1;
+  width: 50%;
+}
+
+.photo-description{
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.learn-more-button {
+  color: #f26938;
+  text-decoration: none;
+}
+
+.learn-more-button:hover {
+  color: #ef350e;
+}
+
+.third {
+  background-color: #333;
+  color: #f26938;
+
+}
+
+/* Style the footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #f26938;
+  padding: 20px 0;
+  border-top: 2px solid #f2522e;
+
+}
+
+footer p{
+  color: #f26938;
+  font-size: 25px;
+}
+
+.contact-icons a i {
+  color: #f86f3d;
+  margin: 0 25px;
+  font-size: 20px;
+}
+
+.contact-icons a:hover i {
+  color: #ef350e;
+}
+
+
+/* Animation */
+.loader {
+  width: 48px;
+  height: 40px;
+  margin-top: 30px;
+  display: inline-block;
+  position: relative;
+  background: #f26938;
+  border-radius: 15% 15% 35% 35%;
+}
+.loader::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 45px;
+  top: 8px;
+  border: 4px solid #f26938;
+  width: 16px;
+  height: 20px;
+  border-radius: 0 4px 4px 0;
+
+}
+.loader::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 10px;
+  color: #FFF;
+  top: -15px;
+  left: 11px;
+  box-sizing: border-box;
+  animation: animloader 1s ease infinite;
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: 2px 0px rgba(255, 255, 255, 0), 12px 0px rgba(255, 255, 255, 0.3), 20px 0px rgba(255, 255, 255, 0);
+  }
+  50% {
+    box-shadow: 2px -5px rgba(255, 255, 255, 0.5), 12px -3px rgba(255, 255, 255, 0.5), 20px -2px rgba(255, 255, 255, 0.6);
+  }
+  100% {
+    box-shadow: 2px -8px rgba(255, 255, 255, 0), 12px -5px rgba(255, 255, 255, 0), 20px -5px rgba(255, 255, 255, 0);
+  }
+}
