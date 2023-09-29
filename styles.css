@@ -86,10 +86,10 @@ p{
 }
 
 .photo-container{
-  display: flex; /* Встановлюємо flex-контейнер */
-  align-items: center; /* Вирівнюємо елементи по вертикалі */
-  justify-content: space-between; /* Розташовуємо елементи по горизонталі з рівним відступом */
-  padding: 20px; /* Додаємо відступи для контейнера */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .second img{
